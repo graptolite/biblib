@@ -15,8 +15,7 @@ BibTeX and hence (barring bugs in translation) should be fully
 compatible with BibTeX's own parser.
 
 
-Features
---------
+## Features
 
 * BibTeX-compatible `.bib` file parser
 
@@ -30,9 +29,17 @@ Features
   can, in turn, be used in HTML and other formats).
 
 
-Installation
-------------
+## Installation
+### Windows (tested on Win10)
+Download this folder and navigate to it (such the current working directory contains the pyproject.toml file), then type in an anaconda prompt:
 
+```
+pip install .
+```
+
+### *nix
+
+The pip install method appears to be somewhat unreliable on *nix systems. 
 Since biblib has no external dependencies or C modules, you can use
 biblib in your project by simply unpacking it under your source tree
 and adding
@@ -55,8 +62,7 @@ run the following in a shell terminal
 In both cases, replace [PATH-TO] with the path on your computer, where you downloaded/cloned biblib to.
 
 
-Examples
---------
+## Examples
 
 There are a few simple examples of biblib's use in `examples/`.  To
 run these dircetly from the source tree, use, for example
@@ -64,8 +70,7 @@ run these dircetly from the source tree, use, for example
     PYTHONPATH=$PWD ./examples/bibparse test.bib
 
 
-Recognized grammar
-------------------
+## Recognized grammar
 
 For reference, the `.bib` parser implements a grammar equivalent to
 the following PEG.  All literals are matched case-*insensitively*.
